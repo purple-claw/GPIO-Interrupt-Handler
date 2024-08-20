@@ -1,6 +1,7 @@
 # GPIO Interrupt Handler
 
 This project contains kernel modules for handling GPIO interrupts. Below are the details for building, loading, and managing these kernel modules.
+It demonstrates the use of GPIO pins on a Raspberry Pi (or any other single-board computer like Beagleboards) to handle button presses using interrupts. Instead of continuously polling for input, which can be inefficient and drain battery life, this project leverages interrupts to trigger specific actions when a button is pressed. This is a common technique in embedded systems for improving performance and efficiency, two buttons are connected to GPIO pins 17 and 18, and an LED is connected to GPIO pin 4. When a button is pressed, the corresponding interrupt triggers a function that controls the LED, either turning it on, off, or toggling its state. The GPIO pin numbers can be easily modified to suit different hardware configurations.
 
 
 ## Building the Kernel Modules
